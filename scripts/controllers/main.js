@@ -7,4 +7,15 @@ angular.module('twitter')
       { message: 'Much more cooler is tweeting about G+', time:'few minutes'},
       { message: 'Forget about, Im gonna back go Facebook', time: 'yesterday'}
     ];
+
+    $scope.postNewTweet = function() {
+      if (typeof $scope.newTweet.time === "undefined") {
+        $scope.newTweet.time = 'now';
+      }
+      $scope.tweets.push({
+        message: $scope.newTweet.message,
+        time: $scope.newTweet.time
+      });
+      $scope.newTweet = {}
+    };
   });

@@ -44,3 +44,28 @@ footer {
   font-size: 12px;
   color: #dcdcdc;
 }
+
+.tweet-message {
+  width: 200px;
+}
+
+.tweet-time {
+  width: 50px;
+}
+
+#tweet-box {
+  padding-bottom: 10px;
+}
+
+.alert {
+  color: #b94a48;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #f2dede;
+  border: 1px solid #eed3d7;
+  border-radius: 4px;
+}
+
+.required {
+  color: red;
+}

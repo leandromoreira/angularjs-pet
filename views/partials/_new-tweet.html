@@ -1,0 +1,17 @@
+<form name="tweet">
+  <input class="tweet-message"
+  name="message"
+  data-ng-model="newTweet.message"
+  data-ng-minlength="3"
+  data-ng-required="true"
+  placeholder="message">
+  <span class="required" data-ng-show="tweet.message.$error.required">
+    * Required.
+  </span>
+  <span class="alert" data-ng-show="tweet.message.$error.minlength">
+    * You need to type at least 3 letters (like BAH)
+  </span>
+  <br>
+  <input class="tweet-time" data-ng-model="newTweet.time" placeholder="time">
+  <button data-ng-click="postNewTweet()">Tweet</button>
+</form>

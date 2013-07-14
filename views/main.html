@@ -2,6 +2,7 @@
   <header>
     <h1>My tweets</h1>
   </header>
+  <div id="tweet-box" data-ng-include="" data-src="'views/partials/_new-tweet.html'"></div>
   <ul>
     <li data-ng-repeat="tweet in tweets">
       {{ tweet.message }} - <em>{{ tweet.time }}</em>
