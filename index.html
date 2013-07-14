@@ -10,9 +10,7 @@
     <link href='styles/app.css' rel='stylesheet' type='text/css'>
   </head>
   <body data-ng-app="twitter">
-    <nav>
-      <a class="link" href="#/">My</a> :: <a class="link" href="#/theirs">Theirs</a>
-    </nav>
+    <ng-include src="'views/partials/navigation_bar.html'"></ng-include>
 
     <!-- #start Placeholder for rendering partials -->
     <div data-ng-view=""></div>
