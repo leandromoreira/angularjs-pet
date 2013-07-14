@@ -2,6 +2,7 @@
   <header>
     <h1>My tweets</h1>
   </header>
+  <div class="success" data-ng-show="success">Your tweet was posted</div>
   <div id="tweet-box" data-ng-include="" data-src="'views/partials/form_tweet.html'"></div>
   <ul>
     <li data-ng-repeat="tweet in tweets">

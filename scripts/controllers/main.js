@@ -2,6 +2,7 @@
 
 angular.module('twitter')
   .controller('MainCtrl', function($scope){
+    $scope.success = false;
     $scope.tweets = [
       { message: 'Tweeting about twitter is cool!', time:'few minutes'},
       { message: 'Much more cooler is tweeting about G+', time:'few minutes'},
@@ -9,6 +10,7 @@ angular.module('twitter')
     ];
 
     $scope.postNewTweet = function() {
+      $scope.success = false;
       if (typeof this.newTweet.time === "undefined") {
         this.newTweet.time = 'now';
       }
@@ -17,5 +19,6 @@ angular.module('twitter')
         time: this.newTweet.time
       });
       this.newTweet = {}
+      $scope.success = true;
     };
   });
