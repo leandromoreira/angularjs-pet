@@ -1,16 +1,14 @@
 'use strict';
 
 angular.module('twitter')
-  .factory('theirTwitterFactory', function($http){
-    var factory = {};
-
-    $http.get('/data/theirs.json')
-      .success(function(data, status, headers, config) {
-        factory.tweets = data;
-      });
-
-    factory.getTheirsTweets = function(){
-      return factory.tweets;
+  .factory('Tweets', function($http){
+    return {
+      all: function(){
+        return $http.get('/data/theirs.json').then(
+          function(result){
+            return result.data;
+          }
+        );
+      }
     };
-    return factory;
   });
