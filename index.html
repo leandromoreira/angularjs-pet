@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="angular pet project">
     <meta name="author" content="leandro moreira">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='styles/app.css' rel='stylesheet' type='text/css'>
   </head>
   <body data-ng-app="twitter">
-    <a href="#/">My</a> :: <a href="#/theirs">Theirs</a>
+    <nav>
+      <a class="link" href="#/">My</a> :: <a class="link" href="#/theirs">Theirs</a>
+    </nav>
 
     <!-- #start Placeholder for rendering partials -->
     <div data-ng-view=""></div>
     <!-- #end Placeholder -->
 
+    <footer>
+      © 0000-2099 ® Final version, no-βeta state allowed. Why are you reading this?
+    </footer>
 
     <!-- #start vendorloadjs -->
     <script src="scripts/vendor/angular.js"></script>
