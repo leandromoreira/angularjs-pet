@@ -9,13 +9,13 @@ angular.module('twitter')
     ];
 
     $scope.postNewTweet = function() {
-      if (typeof $scope.newTweet.time === "undefined") {
-        $scope.newTweet.time = 'now';
+      if (typeof this.newTweet.time === "undefined") {
+        this.newTweet.time = 'now';
       }
       $scope.tweets.push({
-        message: $scope.newTweet.message,
-        time: $scope.newTweet.time
+        message: this.newTweet.message,
+        time: this.newTweet.time
       });
-      $scope.newTweet = {}
+      this.newTweet = {}
     };
   });

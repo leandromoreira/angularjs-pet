@@ -1,17 +1,17 @@
-<form name="tweet">
+<form name="tweetFormt">
   <input class="tweet-message"
   name="message"
   data-ng-model="newTweet.message"
   data-ng-minlength="3"
   data-ng-required="true"
   placeholder="message">
-  <span class="required" data-ng-show="tweet.message.$error.required">
+  <span class="required" data-ng-show="tweetFormt.message.$error.required">
     * Required.
   </span>
-  <span class="alert" data-ng-show="tweet.message.$error.minlength">
+  <span class="alert" data-ng-show="tweetFormt.message.$error.minlength">
     * You need to type at least 3 letters (like BAH)
   </span>
   <br>
   <input class="tweet-time" data-ng-model="newTweet.time" placeholder="time">
-  <button data-ng-click="postNewTweet()">Tweet</button>
+  <button data-ng-disabled="!tweetFormt.$valid" data-ng-click="postNewTweet()">Tweet</button>
 </form>
