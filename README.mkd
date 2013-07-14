@@ -1,0 +1,14 @@
+## Pet project to learn and apply AngularJS
+
+ * Basic hello world (done)
+ * Adds two views (done)
+ * Adds partials for better ui organization (done)
+ * Basics of routing (done)
+ * Factories through http (done)
+ * Testing angular basic components.
+ * Testing angular all components.
+
+## Scripts
+
+````./start```` -> fires up a simple http server (python)
+````./start\_test```` -> fires up Karma runner (testing)
